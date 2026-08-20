@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_corr",
+  "source_file": "STAT550Final.sas",
+  "source_blob_sha": "1a2d7fa907696155bfd6f40fd89a62164c8f0133",
+  "source_commit": "4912ce00ff559f386b9356d9a0fb7aff52c79060",
+  "notes": "Correlation matrix step (script line 44, PROC CORR) on the same renamed/cleaned BASEBALL dataset built in t001. Same mock DATALINES substitution for PROC IMPORT; PROC CORR itself unmodified."
+}

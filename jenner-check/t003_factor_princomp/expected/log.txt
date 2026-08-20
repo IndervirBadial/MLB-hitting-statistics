@@ -1,0 +1,78 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA BASEBALL
+
+NOTE: Processing inline DATALINES (12 lines)
+
+NOTE: Read 12 rows from DATALINES.
+NOTE: Wrote BASEBALL (12 rows, 28 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA BASEBALL
+
+
+NOTE: Read 12 rows from BASEBALL.
+NOTE: Wrote BASEBALL (12 rows, 29 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA BASEBALL
+
+
+NOTE: Read 12 rows from BASEBALL.
+NOTE: Wrote BASEBALL (12 rows, 25 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FACTOR data=BASEBALL
+
+NOTE: Using Python numpy version 2.5.1
+NOTE: PROC FACTOR completed.
+NOTE: PROC PRINCOMP data=BASEBALL
+
+NOTE: Using Python sklearn version 1.9.0
+NOTE: Eigenvalues of the Correlation Matrix:
+NOTE:   Prin1: Eigenvalue=14.813519  Proportion=0.6172  Cumulative=0.6172
+NOTE:   Prin2: Eigenvalue=4.369295  Proportion=0.1821  Cumulative=0.7993
+NOTE:   Prin3: Eigenvalue=2.362823  Proportion=0.0985  Cumulative=0.8977
+NOTE:   Prin4: Eigenvalue=0.828534  Proportion=0.0345  Cumulative=0.9323
+NOTE:   Prin5: Eigenvalue=0.627980  Proportion=0.0262  Cumulative=0.9584
+NOTE:   Prin6: Eigenvalue=0.381884  Proportion=0.0159  Cumulative=0.9743
+NOTE:   Prin7: Eigenvalue=0.254281  Proportion=0.0106  Cumulative=0.9849
+NOTE:   Prin8: Eigenvalue=0.187869  Proportion=0.0078  Cumulative=0.9928
+NOTE:   Prin9: Eigenvalue=0.107151  Proportion=0.0045  Cumulative=0.9972
+NOTE:   Prin10: Eigenvalue=0.048677  Proportion=0.0020  Cumulative=0.9993
+NOTE:   Prin11: Eigenvalue=0.017987  Proportion=0.0007  Cumulative=1.0000
+NOTE:   Prin12: Eigenvalue=0.000000  Proportion=0.0000  Cumulative=1.0000
+NOTE: Eigenvectors:
+NOTE:   Variable          Prin1      Prin2      Prin3      Prin4      Prin5      Prin6      Prin7      Prin8      Prin9      Prin10      Prin11      Prin12
+NOTE:   AvergaeExitVelocity   -0.209298    0.207249    0.151938   -0.191147   -0.253471   -0.144634    0.302107    0.168728    0.089705    0.108405    0.122741   -0.149149
+NOTE:   AverageLaunchAngle   -0.167353   -0.198528   -0.159690   -0.558469   -0.136186    0.297319   -0.225843    0.428244   -0.026230   -0.137398   -0.153501    0.072635
+NOTE:   BarrelBattedRate   -0.228564    0.162162    0.108532   -0.116565   -0.301631   -0.078077    0.014483    0.150159    0.051885    0.346012    0.354860    0.019389
+NOTE:   SolidContactPct    0.226169   -0.096317   -0.202636    0.239333    0.218374    0.031029   -0.017123    0.293129   -0.178320    0.109047    0.611281    0.186424
+NOTE:   FlareBurnerPct    0.229338   -0.177389   -0.045578   -0.102820    0.097851    0.194361   -0.334342   -0.254833    0.159644    0.309579    0.264041    0.013959
+NOTE:   PoorlyUnderPct   -0.225417   -0.051738    0.220451    0.059053    0.299859    0.035144   -0.026572    0.091342    0.701844   -0.329497    0.249446   -0.064992
+NOTE:   PoorlyToppedPct   -0.209016    0.144996    0.040590    0.378936    0.033846    0.555390    0.243555   -0.057557    0.133074    0.139015   -0.241771    0.206052
+NOTE:   PoorlyWeakPct   -0.245426    0.037358   -0.030834    0.228662   -0.127863   -0.187410    0.223385    0.054021   -0.357826   -0.307091    0.215394    0.066969
+NOTE:   HardHitPct      0.251718    0.048115   -0.120135    0.038944   -0.105857    0.094037    0.087487   -0.027851    0.110145   -0.208074   -0.003076    0.408213
+NOTE:   ZSwingPct       0.193777    0.301244   -0.093967    0.043555   -0.132622    0.014726    0.169854    0.122182    0.177591   -0.023848   -0.089269    0.275080
+NOTE:   OZSwingPct      0.245643   -0.114482   -0.070504    0.049337   -0.026716   -0.269630    0.037249    0.116243    0.138172    0.174745   -0.163639   -0.236865
+NOTE:   OZContactPct    0.239561    0.108421    0.054127   -0.035934   -0.342644    0.195133    0.012003    0.002870    0.049583   -0.131802    0.245753    0.038882
+NOTE:   OutZonePct      0.252016   -0.002049    0.007127   -0.153232   -0.198523    0.159588   -0.005793    0.122630   -0.048231   -0.202384   -0.031534    0.170983
+NOTE:   IZContactPct    0.233939    0.153028    0.002227   -0.050780   -0.294913   -0.172013    0.075498   -0.092588    0.342382    0.260075   -0.005835    0.035299
+NOTE:   InZonePct       0.233313    0.094426   -0.153210   -0.043730   -0.089339    0.415397    0.271530   -0.165851   -0.055077   -0.200942    0.167502   -0.656351
+NOTE:   EdgePct        -0.240378    0.161889    0.049339   -0.090000   -0.005560    0.156581   -0.151360    0.006054    0.019220   -0.106664    0.265329   -0.001718
+NOTE:   WhiffPct        0.004872   -0.459040    0.102640    0.153779   -0.185085    0.053463    0.180201    0.131788    0.048452    0.044963   -0.010318   -0.067034
+NOTE:   PullPct         0.018401    0.459756   -0.014870   -0.103037    0.035475   -0.157988   -0.330989   -0.328333   -0.063062   -0.257691    0.025507    0.016724
+NOTE:   StraightAwayPct   -0.034775    0.389695   -0.241292   -0.182437    0.440347    0.147004    0.169789    0.225501   -0.089519    0.339275   -0.048347   -0.060702
+NOTE:   OppositePct     0.101128    0.175022    0.501510    0.253342   -0.101006    0.184060   -0.363735    0.235329   -0.166358    0.122044   -0.082546   -0.026857
+NOTE:   GroundballsPct   -0.216217   -0.186690   -0.163388   -0.225376   -0.044934    0.045550    0.213119   -0.434613   -0.010850    0.117335    0.117373    0.302125
+NOTE:   FlyballsPct     0.245374    0.060679   -0.030675   -0.097441    0.247440   -0.203366    0.190950    0.278243    0.117388   -0.220499   -0.035926    0.060809
+NOTE:   LinedrivesPct   -0.154664    0.018967   -0.468483    0.303348   -0.214987   -0.037476   -0.259482    0.082050    0.096191   -0.067893   -0.068860   -0.128988
+NOTE:   PopupsPct      -0.160274    0.074460   -0.469649    0.208614   -0.176506   -0.030343   -0.206722    0.123821    0.199043    0.046553   -0.025317   -0.063157
+NOTE: Number of Observations: 12
+NOTE: Analysis based on Correlation Matrix
+NOTE: Wrote princomp (12 rows, 37 columns).
+NOTE: ODS plot written: princomp_scree.spec.json
+NOTE: PROC PRINCOMP ODS Graphics generated.
+NOTE: PROC PRINCOMP completed.
