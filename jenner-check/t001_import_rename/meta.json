@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_import_rename",
+  "source_file": "STAT550Final.sas",
+  "source_blob_sha": "1a2d7fa907696155bfd6f40fd89a62164c8f0133",
+  "source_commit": "4912ce00ff559f386b9356d9a0fb7aff52c79060",
+  "notes": "Data import + variable rename + cleanup steps (script lines 1-40): reads the Statcast-style leaderboard CSV, renames metric columns to readable names, builds full_name, drops ID columns. PROC IMPORT DATAFILE=REFFILE swapped for an inline DATALINES mock (12 rows) matching the real Baseball Savant export schema, since REFFILE is a SAS-Studio Import-wizard fileref never defined in the source file."
+}

@@ -1,0 +1,57 @@
+NOTE: Option OBS changed to 100.
+NOTE: DATA BASEBALL
+
+NOTE: Processing inline DATALINES (12 lines)
+
+NOTE: Read 12 rows from DATALINES.
+NOTE: Wrote BASEBALL (12 rows, 28 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA BASEBALL
+
+
+NOTE: Read 12 rows from BASEBALL.
+NOTE: Wrote BASEBALL (12 rows, 29 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA BASEBALL
+
+
+NOTE: Read 12 rows from BASEBALL.
+NOTE: Wrote BASEBALL (12 rows, 25 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=BASEBALL
+
+NOTE: Read 12 rows from BASEBALL.
+NOTE: Wrote BASEBALL (12 rows, 25 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA clusters
+
+NOTE: Processing inline DATALINES (12 lines)
+
+NOTE: Read 12 rows from DATALINES.
+NOTE: Wrote clusters (12 rows, 2 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=clusters
+
+NOTE: Read 12 rows from clusters.
+NOTE: Wrote clusters (12 rows, 2 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA baseballclust
+
+NOTE: Stream 1 processed 12 rows, max BY-group size: 1 (O(1) memory verified)
+NOTE: Stream 2 processed 12 rows, max BY-group size: 1 (O(1) memory verified)
+
+NOTE: Wrote baseballclust (12 rows, 26 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC PRINT data=baseballclust
+
+NOTE: PROC PRINT completed: 12 observations printed, 5 variables

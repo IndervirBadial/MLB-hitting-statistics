@@ -1,0 +1,7 @@
+{
+  "bundle": "t003_factor_princomp",
+  "source_file": "STAT550Final.sas",
+  "source_blob_sha": "1a2d7fa907696155bfd6f40fd89a62164c8f0133",
+  "source_commit": "4912ce00ff559f386b9356d9a0fb7aff52c79060",
+  "notes": "Factor analysis + PCA steps (script lines 49-63, PROC FACTOR SIMPLE CORR and PROC PRINCOMP) on the same 24-variable BASEBALL dataset. Same mock DATALINES substitution as t001/t002; PROC FACTOR and PROC PRINCOMP statements unmodified from source. Note: this bundle deliberately does NOT include the script's later PROC FACTOR ... NFACT=6 OUT=baseballfact step (line 67) feeding PROC CLUSTER/PROC TREE (lines 81-104) -- that combination (24 vars, 12 obs, N<P) hits a confirmed Jenner engine bug (PROC FACTOR OUT= silently empty when observations <= variables), filed as EastAgile/jenner-language PR #19293 / regression test 467237. The SIMPLE CORR variant used here (no OUT=) is unaffected and renders correctly."
+}

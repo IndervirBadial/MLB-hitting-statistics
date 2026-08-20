@@ -1,0 +1,21 @@
+{
+  "_captured_at": "2026-08-20T08:58:00Z",
+  "_captured_run_id": "r_1f0e58f3675d4af1b1520a3a9b177d51",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Option OBS changed to 100.",
+    "NOTE: DATA BASEBALL",
+    "NOTE: Processing inline DATALINES (12 lines)",
+    "NOTE: Read 12 rows from DATALINES.",
+    "NOTE: Wrote BASEBALL (12 rows, 28 columns)."
+  ],
+  "log_does_not_contain": [
+    "ERROR:",
+    "[JENNER-ERROR"
+  ],
+  "diagnostics": {
+    "parse_warnings": [],
+    "runtime_warnings": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "bundle": "t004_sort_merge",
+  "source_file": "STAT550Final.sas",
+  "source_blob_sha": "1a2d7fa907696155bfd6f40fd89a62164c8f0133",
+  "source_commit": "4912ce00ff559f386b9356d9a0fb7aff52c79060",
+  "notes": "Sort + merge-by-group step (script lines 108-115, PROC SORT and the MERGE ... BY full_name DATA step) that joins the analysis dataset against a cluster-assignment table. Same mock DATALINES substitution for PROC IMPORT; the cluster-assignment table is a small mock BY-group dataset (12 rows) standing in for the script's own PROC CLUSTER/PROC TREE output, since that pipeline (PROC FACTOR NFACT=6 OUT=... at 24 vars/12 obs) hits the Jenner engine bug documented in t003_factor_princomp/meta.json. PROC SORT and the MERGE ... BY statement are unmodified from source and are what this bundle exercises."
+}
